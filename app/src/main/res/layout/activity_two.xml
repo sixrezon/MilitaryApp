@@ -12,40 +12,27 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/shapka" />
-        </RelativeLayout>
-
         <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
             android:columnCount="1"
             android:columnOrderPreserved="false"
+            android:padding="16dp"
             android:rowCount="4">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/directoryId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="@color/color_bg"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -53,28 +40,26 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Новости"
+                        android:text="Новость 1"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="24sp" />
+                        android:textSize="35sp" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/ustavId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="@color/color_bg"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -82,28 +67,26 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Воинский устав"
+                        android:text="Новость 2"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="24sp" />
+                        android:textSize="35sp" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/rangId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="@color/color_bg"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -111,28 +94,26 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="звания"
+                        android:text="Новость 3"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="24sp" />
+                        android:textSize="35sp" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/structId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="@color/color_bg"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
@@ -140,73 +121,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Структура ВС"
+                        android:text="РЫБА 1"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="24sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/gunId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Оружие"
-                        android:textAllCaps="true"
-                        android:textColor="@color/color_text"
-                        android:textSize="24sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/technikaId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Техника"
-                        android:textAllCaps="true"
-                        android:textColor="@color/color_text"
-                        android:textSize="24sp" />
+                        android:textSize="35sp" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
     </LinearLayout>
-
 </ScrollView>

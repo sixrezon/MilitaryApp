@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943483128126",
+    "project_id": "militaryapp-98e28",
+    "storage_bucket": "militaryapp-98e28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943483128126:android:eb7635ed4e2bbb5dd1c46f",
+        "android_client_info": {
+          "package_name": "com.example.militaryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943483128126-10rcsv0tq44mr34ui6c2em6la5gvddua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhY4aW32G8yLDZ07wu6T5w3C6KAj9wNok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943483128126-10rcsv0tq44mr34ui6c2em6la5gvddua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
