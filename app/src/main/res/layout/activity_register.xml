@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -9,11 +9,15 @@
     tools:context=".Login">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/img_icon"
@@ -21,14 +25,23 @@
             android:layout_height="250dp"
             android:src="@drawable/icon" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
         <EditText
             android:id="@+id/r_login"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/round_edit_text"
             android:drawableRight="@drawable/ic_username"
             android:drawablePadding="6dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:hint="Логин"
             android:inputType="textPersonName"
             android:padding="16dp"
@@ -43,6 +56,8 @@
             android:background="@drawable/round_edit_text"
             android:drawableRight="@drawable/ic_email"
             android:drawablePadding="6dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:hint="Почта"
             android:inputType="textEmailAddress"
             android:padding="16dp"
@@ -57,6 +72,8 @@
             android:background="@drawable/round_edit_text"
             android:drawableRight="@drawable/ic_password"
             android:drawablePadding="6dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:hint="Пароль"
             android:inputType="textPassword"
             android:padding="16dp"
@@ -69,7 +86,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Button
             android:id="@+id/r_btn_register"
@@ -81,4 +101,18 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/color_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
