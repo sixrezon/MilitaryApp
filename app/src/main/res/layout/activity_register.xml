@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/icon" />
+
+        <EditText
+            android:id="@+id/r_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_edit_text"
+            android:drawableRight="@drawable/ic_username"
+            android:drawablePadding="6dp"
+            android:hint="Логин"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#A32E2E2E" />
+
+        <EditText
+            android:id="@+id/r_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_edit_text"
+            android:drawableRight="@drawable/ic_email"
+            android:drawablePadding="6dp"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#A32E2E2E" />
+
+        <EditText
+            android:id="@+id/r_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_edit_text"
+            android:drawableRight="@drawable/ic_password"
+            android:drawablePadding="6dp"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#A32E2E2E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/r_btn_register"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/rounded_button"
+            android:text="Регистрация"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/color_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
