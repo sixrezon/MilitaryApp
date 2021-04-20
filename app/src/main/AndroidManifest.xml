@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="ExtraText">
+        <activity android:name=".ItemsStruct"></activity>
         <activity android:name=".ItemsRule" />
         <activity android:name=".WeaponsMenu" />
         <activity android:name=".StructMenu" />

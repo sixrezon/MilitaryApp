@@ -11,7 +11,5 @@ public class NewsMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_menu);
-        TextView text = findViewById(R.id.txt);
-        text.setText("Первый абзац\nВторой абзац");
     }
 }
