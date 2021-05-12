@@ -2,7 +2,6 @@ package com.example.militaryapp;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,7 +32,6 @@ public class ItemsRule extends AppCompatActivity {
         progressDialog.setContentView(R.layout.progress_dialog);
         progressDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
-
         DatabaseReference mDataBase = FirebaseDatabase.getInstance().getReference("Rule");
 
         mDataBase.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -49,12 +47,10 @@ public class ItemsRule extends AppCompatActivity {
                 setSupportActionBar(toolbar);
                 getSupportActionBar().setTitle(rc.title);
                 Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }

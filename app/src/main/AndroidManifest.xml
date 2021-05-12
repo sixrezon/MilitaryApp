@@ -10,11 +10,12 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="ExtraText">
-        <activity android:name=".ItemsStruct"></activity>
         <activity android:name=".ItemsRule" />
+        <activity android:name=".ItemsStruct" />
         <activity android:name=".WeaponsMenu" />
         <activity android:name=".StructMenu" />
         <activity android:name=".RankMenu" />

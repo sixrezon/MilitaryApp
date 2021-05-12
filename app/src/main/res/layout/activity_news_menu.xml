@@ -12,26 +12,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <GridLayout
-
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alignmentMode="alignMargins"
-            android:columnCount="1"
-            android:columnOrderPreserved="false"
-            android:padding="16dp"
-            android:rowCount="4">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <androidx.cardview.widget.CardView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -63,12 +55,9 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -83,17 +72,16 @@
                         android:src="@drawable/news_2" />
 
                     <TextView
-                        android:padding="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:padding="10dp"
                         android:text="@string/news_content_2"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
                         android:textSize="14sp" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
-        </GridLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,32 +14,27 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:alignmentMode="alignMargins"
-            android:columnCount="1"
-            android:columnOrderPreserved="false"
-            android:rowCount="1">
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/news_id"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
+                android:textAlignment="center"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -46,28 +42,26 @@
                         android:text="Новости"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="22sp" />
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/rule_id"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
+                android:textAlignment="center"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -75,57 +69,53 @@
                         android:text="Воинский устав"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="22sp" />
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/rank_id"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
+                android:textAlignment="center"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="звания"
+                        android:text="Звания"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="22sp" />
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/struct_id"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
+                android:textAlignment="center"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -133,28 +123,26 @@
                         android:text="Структура ВС"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="22sp" />
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/weapons_id"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
+                android:textAlignment="center"
                 app:cardBackgroundColor="@color/color_bg"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="16dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -162,12 +150,10 @@
                         android:text="Оружие"
                         android:textAllCaps="true"
                         android:textColor="@color/color_text"
-                        android:textSize="22sp" />
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
-
-        </GridLayout>
+        </LinearLayout>
     </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
