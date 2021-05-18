@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_header">#423B2F</color>
     <color name="color_bg">#4A664A</color>
-    <color name="color_bg1">#5A5F37</color>
     <color name="color_text">#FFFFFF</color>
 </resources>

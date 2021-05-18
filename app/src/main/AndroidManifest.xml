@@ -12,11 +12,12 @@
         android:roundIcon="@drawable/icon"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
         <activity android:name=".ItemsRule" />
         <activity android:name=".ItemsStruct" />
         <activity android:name=".WeaponsMenu" />
+        <activity android:name=".ItemsWeapons" />
         <activity android:name=".StructMenu" />
         <activity android:name=".RankMenu" />
         <activity android:name=".RuleMenu" />
@@ -27,7 +28,6 @@
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
