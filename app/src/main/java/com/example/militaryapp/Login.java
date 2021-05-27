@@ -50,7 +50,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 userLogin();
                 break;
             case R.id.tv_guest:
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, MainActivity.class)
+                        .putExtra("guest_status", "true"));
                 Toast.makeText(Login.this, "Вы вошли как гость!", Toast.LENGTH_LONG).show();
                 break;
             case R.id.btn_register:
@@ -87,7 +88,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
             if (task.isSuccessful()) {
                 progressBar.setVisibility(View.GONE);
-                startActivity(new Intent(Login.this, MainActivity.class));
+                startActivity(new Intent(Login.this, MainActivity.class)
+                        .putExtra("guest_status", "false"));
             } else {
                 progressBar.setVisibility(View.GONE);
                 Toast.makeText(Login.this, "Такого пользователя не существует!", Toast.LENGTH_LONG).show();
