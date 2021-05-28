@@ -33,6 +33,11 @@ public class RankMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rank_menu);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
+
         rank_view = findViewById(R.id.rank_view);
         background_view = findViewById(R.id.background_view);
         rank_text = findViewById(R.id.rank_text);

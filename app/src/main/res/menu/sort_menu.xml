@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_likeUp"
+        android:title="По возрастанию рейтинга" />
+    <item
+        android:id="@+id/menu_likeDown"
+        android:title="По убыванию рейтинга" />
+    <item
+        android:id="@+id/menu_dateNew"
+        android:title="Сначала новые" />
+    <item
+        android:id="@+id/menu_dateOld"
+        android:title="Сначала старые" />
+</menu>

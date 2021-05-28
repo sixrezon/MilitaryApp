@@ -23,28 +23,57 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/news_text"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:padding="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
                 android:textAllCaps="true"
                 android:textColor="@color/color_text"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
-            <ImageButton
-                android:id="@+id/like_btn"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginRight="5dp"
-                android:background="@color/color_bg"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_favorite_false" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/like_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/color_bg"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_favorite_false" />
+
+                <TextView
+                    android:id="@+id/like_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/news_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
 
 

@@ -24,6 +24,7 @@ public class ResetPassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
+
         et_email = (EditText) findViewById(R.id.f_email);
         btn_reset_password = (Button) findViewById(R.id.f_btn_reset_password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);

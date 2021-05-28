@@ -6,6 +6,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_bg">
+
+        <ImageButton
+            android:id="@+id/sort_btn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:background="@color/color_bg"
+            android:src="@drawable/ic_menu" />
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler1"
         android:layout_width="match_parent"
